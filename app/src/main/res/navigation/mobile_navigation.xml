@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/welcomeFragment">
+
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.WelcomeFragment">
+        <action
+            android:id="@+id/action_welcomeFragment_to_userAuthFragment"
+            app:destination="@id/userAuthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAuthFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.UserAuthFragment"
+        tools:layout="@layout/fragment_user_auth">
+        <action
+            android:id="@+id/action_userAuthFragment_to_readyToStartFragment"
+            app:destination="@id/readyToStartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readyToStartFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.ReadyToStartFragment"
+        tools:layout="@layout/fragment_ready_to_start" >
+        <action
+            android:id="@+id/action_readyToStartFragment_to_plantManagerTabLayoutFragment"
+            app:destination="@id/plantManagerTabLayoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantManagerTabLayoutFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.PlantManagerTabLayoutFragment"
+        tools:layout="@layout/fragment_plant_manager_tab_layout" >
+        <action
+            android:id="@+id/action_plantManagerTabLayoutFragment_to_plantSaveFragment"
+            app:destination="@id/plantSaveFragment" />
+        <action
+            android:id="@+id/action_plantManagerTabLayoutFragment_to_deleteConfirmDialog"
+            app:destination="@id/deleteConfirmDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantSaveFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.PlantSaveFragment"
+        tools:layout="@layout/fragment_plant_save" >
+        <action
+            android:id="@+id/action_plantSaveFragment_to_plantManagerTabLayoutFragment"
+            app:destination="@id/plantManagerTabLayoutFragment" />
+        <argument
+            android:name="plantModel"
+            app:argType="br.com.rocketseat.nextlevelweek.plantmanager.models.Plant" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/deleteConfirmDialogFragment"
+        android:name="br.com.rocketseat.nextlevelweek.plantmanager.views.fragments.DeleteConfirmDialogFragment"
+        tools:layout="@layout/dialog_delete" >
+        <argument
+            android:name="plantToDelete"
+            app:argType="br.com.rocketseat.nextlevelweek.plantmanager.models.Plant" />
+    </dialog>
+
+</navigation>

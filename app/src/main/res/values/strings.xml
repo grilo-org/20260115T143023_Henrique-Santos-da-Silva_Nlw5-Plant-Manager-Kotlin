@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Plant Manager</string>
+    <string name="welcome_app_title">Gerencie\nsuas plantas de\nforma fácil</string>
+    <string name="welcome_app_description">Não esqueça mais de regar suas\nplantas. Nós cuidamos de lembrar você\nsempre que precisar.</string>
+    <string name="happy_emoji_open_eyes">😃</string>
+    <string name="happy_emoji_close_eyes">😄</string>
+    <string name="what_is_your_name">Como podemos\nchamar você?</string>
+    <string name="enter_name">Digite um nome</string>
+    <string name="confirm">Confirmar</string>
+    <string name="ready">Prontinho</string>
+    <string name="ready_description">Agora vamos começar a cuidar das suas\nplantinhas com muito cuidado.</string>
+    <string name="start">Começar</string>
+    <string name="greeting_user">Olá,\n<b>%1$s</b></string>
+    <string name="choice_place_your_plant"><b>Em qual ambiente</b>\nvocê quer colocar sua planta?</string>
+    <string name="plant_image_content_description">Plant Image</string>
+    <string name="save_new_plant">Nova Planta</string>
+    <string name="my_plants">Minhas Plantinhas</string>
+    <string name="my_plants_header">Minhas\n<b>Plantinhas</b></string>
+    <string name="choice_best_time">Escolha o melhor horário para ser lembrado:</string>
+    <string name="register_plant">Cadastrar planta</string>
+    <string name="water_timer">Regar ás\n&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="next_watering">Próxima Regada</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Deletar</string>
+    <string name="delete_confirm">Deseja mesmo deletar sua\n%1$s?</string>
+    <string name="next_watered">Regue sua %1$s\ndaqui a %2$d horas.</string>
+    <string name="back_button_description_content">voltar</string>
+</resources>
